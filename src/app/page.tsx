@@ -1,19 +1,16 @@
 import Image from "next/image";
-import Navbar from "./Components/Header";
-import Header from "./Components/Header";
-import Link from "next/link";
-import Hero from "./Components/Hero";
-import Footer from "./Components/Footer";
+import Header from '../app/components/Header';
+import Footer from '../app/components/Footer';
+import Hero from '../app/components/Hero';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      <Footer/>
-      
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <Hero />
+      <Footer />
     </div>
-
-  )
-
+  );
 }
+
+export default Home;
